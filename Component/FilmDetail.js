@@ -19,7 +19,7 @@ class FilmDetail extends React.Component {
                             onPress={() => params.shareFilm()}>
                             <Image
                               style={styles.share_image}
-                              source={require('../Images/ic_share.png')} />
+                              source={require('../assets/ic_share.ios.png')} />
                           </TouchableOpacity>
         }
       }
@@ -76,10 +76,10 @@ class FilmDetail extends React.Component {
   }
 
   _displayFavoriteImage() {
-    var sourceImage = require('..assets/ic_favorite_border.png')
+    var sourceImage = require('../assets/ic_favorite_border.png')
     var shouldEnlarge = false // Par défaut, si le film n'est pas en favoris, on veut qu'au clic sur le bouton, celui-ci s'agrandisse => shouldEnlarge à true
     if (this.props.favoritesFilm.findIndex(item => item.id === this.state.film.id) !== -1) {
-      sourceImage = require('..assets/ic_favorite.png')
+      sourceImage = require('../assets/ic_favorite.png')
       shouldEnlarge = true // Si le film est dans les favoris, on veut qu'au clic sur le bouton, celui-ci se rétrécisse => shouldEnlarge à false
     }
     return (
@@ -140,7 +140,7 @@ class FilmDetail extends React.Component {
           onPress={() => this._shareFilm()}>
           <Image
             style={styles.share_image}
-            source={require('../assets/ic_share.png')} />
+            source={require('../assets/ic_share.android.png')} />
         </TouchableOpacity>
       )
     }

@@ -3,10 +3,10 @@
 import React from 'react'
 import { StyleSheet, Image } from 'react-native'
 import { createStackNavigator, createBottomTabNavigator, createAppContainer } from 'react-navigation'
-import Search from '../Components/Search'
-import FilmDetail from '../Components/FilmDetail'
-import Favorites from '../Components/Favorites'
-import Test from '../Components/Test'
+import Search from '../Component/Search'
+import FilmDetail from '../Component/FilmDetail'
+import Favorites from '../Component/Favorites'
+import Test from '../Component/Test'
 
 
 
